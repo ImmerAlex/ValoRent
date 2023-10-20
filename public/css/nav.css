@@ -1,0 +1,140 @@
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--primary);
+    color: #f1f1f1;
+    padding: 20px 0;
+}
+
+nav .leftNavContainer {
+    display: flex;
+    gap: 30px;
+}
+.leftNavContainer p:first-child {
+    font-weight: bold;
+}
+
+.leftNavContainer div {
+    position: relative;
+}
+
+.leftNavContainer div input {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    padding: 2px 2px 2px 25px;
+}
+
+.leftNavContainer div input:focus {
+    outline: none;
+}
+
+.leftNavContainer div label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+}
+
+.burger {
+    display: none;
+    position: relative;
+    width: 32px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    width: 32px;
+    height: 2px;
+    background-color: white;
+    opacity: 1;
+    visibility: visible;
+    transition: 400ms;
+}
+
+.burger span:nth-child(1) {
+    top: 0;
+}
+
+.burger span:nth-child(3) {
+    bottom: 0;
+}
+
+.burger.active span:nth-child(1) {
+    top: 50%;
+    transform: rotate(-45deg);
+}
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.burger.active span:nth-child(3) {
+    top: 50%;
+    transform: rotate(45deg);
+}
+
+.rightNavContainer {
+    display: flex;
+}
+
+.rightNavContainer div {
+    display: flex;
+    gap: 5px;
+    margin-right: 10px;
+}
+
+@media (max-width: 700px) {
+    .burger {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .leftNavContainer {
+        position: absolute;
+        top: -100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        width: 100%;
+        height: calc(100vh - 60px);
+        background-color: #0d0d0d;
+        padding-top: 50px;
+        font-size: 20px;
+        transition: 200ms;
+    }
+
+    .leftNavContainer.active {
+        top: 60px;
+    }
+
+    .leftNavContainer div {
+        position: relative;
+    }
+
+    .leftNavContainer div input {
+        padding: 5px 5px 5px 30px;
+        font-size: 20px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+    .leftNavContainer div input:focus {
+        outline: none;
+    }
+
+    .leftNavContainer div label {
+        position: absolute;
+        top: 7px;
+        left: 6px;
+        color: black;
+    }
+}
