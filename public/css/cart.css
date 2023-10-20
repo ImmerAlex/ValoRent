@@ -1,0 +1,146 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    margin-top: 17px;
+    background-color: #EFF2F6;
+}
+
+.container-all {
+    width: 80%;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.containerTop {
+    display: flex;
+    gap: 20px;
+}
+
+.containerTop .right, .containerTop .left {
+    width: 50%;
+}
+
+.containerTop .right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.containerTop .left {
+    display: flex;
+    flex-direction: column;
+}
+
+.containerTop .right input, .containerTop .right button {
+    width: 100%;
+    padding: 0.8em 2em;
+}
+
+.containerTop .right button {
+    text-align: left;
+    background-color: black;
+    color: #EFF2F6;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 2px;
+    transition: 200ms;
+}
+
+.containerTop .right button:hover {
+    color: rgb(0, 0, 0);
+    transform: translate(-0.25rem, -0.25rem);
+    background: rgb(155, 215, 255);
+    box-shadow: rgb(0, 0, 0) 0.25rem 0.25rem;
+}
+
+.containerTop .right input {
+    background-color: #EFF2F6;
+}
+
+.right h1 {
+    margin-bottom: 10px;
+}
+
+.product {
+    display: flex;
+    gap: 30px;
+}
+
+.product img {
+    max-height: 120px;
+}
+
+.product .textProduct {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product .textProduct .txtRemove {
+    align-self: flex-end;
+    cursor: pointer;
+}
+
+.product .textProduct .txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.textProduct .txt h1 {
+    margin: 0;
+}
+
+.lightLine {
+    height: 2px;
+    width: 100%;
+    background-color: gray;
+    margin: 10px 0;
+}
+
+.boldLine {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+.containerOrderInfo {
+    margin-top: 30px;
+    width: 80%;
+}
+
+.containerOrderInfo .contentOrder {
+    width: 50%;
+}
+
+.containerOrderInfo .contentOrder h1 {
+    margin: 10px;
+}
+
+
+@media (max-width: 730px) {
+    .containerTop {
+        flex-direction: column;
+    }
+
+    .containerTop .right, .containerTop .left {
+        width: 100%;
+    }
+}
