@@ -1,0 +1,99 @@
+*,
+::after,
+::before {
+    font-family: sans-serif;
+    font-weight: 525;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root {
+    --white: #ffffff;
+    /* --darkBlue: #091225; */
+    --black: #000000;
+    /* --lightBlue: #005ef5; */
+    --gray: #A8A8A8;
+    --backgroundcolor:#eff2f6;
+
+}
+.input-Footer {
+    border: var(--black) 1px solid;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 5px 10px;
+    
+
+}
+
+::placeholder {
+    color: var(--gray);
+}
+
+footer input {
+    border: var(--white);
+    padding: 5px 4px;
+
+}
+
+footer button {
+    color: var(--black);
+    background-color: var(--backgroundcolor);
+    border: solid 0px var(--black);
+    font-weight: 700;
+}
+
+footer p {
+    color: var(--black);
+    font-size: small;
+    font-weight: 500;
+
+}
+
+footer h4 {
+    color: var(--black);
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.under-footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.Shop,
+.Help,
+.About {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+.under-footer p {
+    margin: 0;
+    color: var(--gray);
+
+}
+
+.title-Footer {
+    margin: 10px 0px 10px 25px;
+}
+
+.title-Footer h1 {
+    font-size: 22px;
+    font-weight: 600;
+
+}
+footer {
+    margin:10px 5px;
+}
+hr {
+    border-color: var(--black);
+    margin: 15px 0px;
+}
