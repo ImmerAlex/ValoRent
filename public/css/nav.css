@@ -11,7 +11,13 @@ nav .leftNavContainer {
     display: flex;
     gap: 30px;
 }
-.leftNavContainer p:first-child {
+
+.leftNavContainer a {
+    color: white;
+    text-decoration: none;
+}
+
+.leftNavContainer a:first-child {
     font-weight: bold;
 }
 

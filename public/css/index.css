@@ -4,7 +4,6 @@
 
 body {
     background-color: var(--background);
-    font-family: sans-serif;
 }
 
 header {
@@ -18,7 +17,7 @@ header {
 }
 
 header h1 {
-    font-size: 50px;
+    font-size: 3vw;
     font-weight: bold;
 }
 
@@ -95,8 +94,10 @@ header a {
 footer {
     display: flex;
     justify-content: center;
-    width: calc(100vw - 50px);
-    margin: 0 20px 50px 20px;
+    width: 100%;
+    background-color: #0d0d0d;
+    color: white;
+    padding: 40px 0;
 }
 
 footer .footer-newLetter {
@@ -112,6 +113,7 @@ footer .footer-newLetter h1 {
 
 footer .footer-newLetter p {
     width: 80%;
+    color: #979797;
 }
 
 footer .footer-newLetter div {
@@ -124,6 +126,7 @@ footer .footer-newLetter div {
     padding: 12px 17% 12px 12px;
     border: none;
     border: 1px solid rgb(160, 160, 160);
+    background: #0d0d0d;
 }
 
 .footer-newLetter div input::placeholder {
@@ -139,6 +142,7 @@ footer .footer-newLetter div {
     position: absolute;
     right: 10px;
     top: 12px;
+    color: white;
     font-weight: bold;
 }
 
@@ -171,10 +175,20 @@ footer .footer-newLetter div {
 
 @media (max-width: 700px) {
 
+    header h1 {
+        font-size: 25px;
+    }
+
+    header p {
+        width: 60%;
+        font-size: 16px;
+    }
+
     footer {
         flex-direction: column;
         gap: 30px;
-        width: fit-content;
+        width: 100%;
+        padding: 30px;
     }
     
     footer .footer-newLetter {

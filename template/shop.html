@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/nav.css">
+    <link rel="stylesheet" href="../public/css/shop.css">
+    <title>Shop ValoRent</title>
+</head>
+
+<body>
+
+    <nav>
+        <div class="leftNavContainer">
+            <a href="../index.html">ValoRent</a>
+            <a>Shop</a>
+            <div>
+                <input placeholder="Search" type="text" name="searchShop" id="searchShop" />
+                <label for="searchShop">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </div>
+        <div class="rightNavContainer">
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p id="nombreInChart">0</p>
+            </div>
+            <a>login</a>
+        </div>
+
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Shop skin</h1>
+        <p>Revamp your style with the latest designer trends in men's clothing or achieve a perfectly curated wardrobe
+            thanks to our line-up of timeless pieces. </p>
+    </header>
+
+
+    <div class="container-all">
+        <div class="container-filter">
+            <div class="item-filter type">
+                <h2>Type</h2>
+                <div>
+                    <input type="checkbox" id="toutCheckbox" data-type="tout">
+                    <label for="toutCheckbox">Tout</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="vandalCheckbox" data-type="vandal">
+                    <label for="vandalCheckbox">Vandal</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="phantomCheckbox" data-type="phantom">
+                    <label for="phantomCheckbox">Phantom</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="knifeCheckbox" data-type="knife">
+                    <label for="knifeCheckbox">Knife</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="operatorCheckbox" data-type="operator">
+                    <label for="operatorCheckbox">Operator</label>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="containerItem">
+            <div class="container-card"></div>
+            <button>Show more</button>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="../public/javaScript/nav.js"></script>
+    <script type="module" src="../public/javaScript/data.js"></script>
+    <script type="module" src="../public/javaScript/shop.js"></script>
+</body>
+
+</html>
