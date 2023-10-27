@@ -34,6 +34,7 @@ footer .footer-newLetter div {
     border: none;
     border: 1px solid rgb(160, 160, 160);
     background: #0d0d0d;
+    color: white;
 }
 
 .footer-newLetter div input::placeholder {
