@@ -150,6 +150,7 @@ h2 {
 .order-txt {
     display: none;
     padding: 5px 0 0 15px;
+    width: 49%;
 }
 
 .order-txt.show {
@@ -181,6 +182,10 @@ footer {
     }
 
     .contentOrder, .order-title  {
+        width: 100%;
+    }
+
+    .order-txt {
         width: 100%;
     }
 }
