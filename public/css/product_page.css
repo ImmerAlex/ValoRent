@@ -1,0 +1,81 @@
+.container-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 80vh;
+    padding: 20px;
+}
+
+.container-all img {
+    width: 60vw;
+    cursor: pointer;
+    transition: 400ms;
+}
+
+.container-all img:hover {
+    transform: scale(1.1);
+}
+
+.containerInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20%;
+}
+
+.containerInfo h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.containerInfo div {
+    display: flex;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    width: fit-content;
+}
+
+.containerInfo div .sub, .containerInfo div .add {
+    padding: 10px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.containerInfo div input {
+    all: unset;
+    text-align: center;
+    width: 50px;
+    margin: 0 20px 0 30px;
+}
+
+.addCart, .buyNow {
+    color: white;
+    width: fit-content;
+    padding: 10px 25px;
+}
+
+.addCart {
+    background-color: #0d0d0d;
+}
+
+.buyNow {
+    background-color: #2fb0ed;
+}
+
+@media (max-width: 700px) {
+
+    .container-all {
+        flex-direction: column;
+    }
+
+    .container-all img {
+        width: 100%;
+    }
+
+    .containerInfo {
+        width: 100%;
+    }
+}

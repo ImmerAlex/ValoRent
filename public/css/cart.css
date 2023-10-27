@@ -9,7 +9,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-family: monospace;
+    font-family: sans-serif;
     margin-top: 17px;
     background-color: #EFF2F6;
 }
@@ -134,6 +134,33 @@ h2 {
     margin: 10px;
 }
 
+.containerOrderInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.order-title {
+    display: flex;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.order-txt {
+    display: none;
+    padding: 5px 0 0 15px;
+}
+
+.order-txt.show {
+    display: block;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
 
 @media (max-width: 730px) {
     .containerTop {
@@ -141,6 +168,19 @@ h2 {
     }
 
     .containerTop .right, .containerTop .left {
+        width: 100%;
+    }
+
+    footer {
+        position: unset;
+        margin-top: 20px;
+    }
+
+    .containerOrderInfo .contentOrder {
+        width: 100%;
+    }
+
+    .contentOrder, .order-title  {
         width: 100%;
     }
 }
