@@ -91,86 +91,7 @@ header a {
     width: 10vw;
 }
 
-footer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    background-color: #0d0d0d;
-    color: white;
-    padding: 40px 0;
-}
 
-footer .footer-newLetter {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-footer .footer-newLetter h1 {
-    font-size: 36px;
-    font-weight: bold;
-}
-
-footer .footer-newLetter p {
-    width: 80%;
-    color: #979797;
-}
-
-footer .footer-newLetter div {
-    position: relative;
-    width: 80%;
-}
-
-.footer-newLetter div input {
-    width: 100%;
-    padding: 12px 17% 12px 12px;
-    border: none;
-    border: 1px solid rgb(160, 160, 160);
-    background: #0d0d0d;
-}
-
-.footer-newLetter div input::placeholder {
-    color: #979797;
-    font-weight: bold;
-}
-
-.footer-newLetter div input:focus {
-    outline: none;
-}
-
-.footer-newLetter div a {
-    position: absolute;
-    right: 10px;
-    top: 12px;
-    color: white;
-    font-weight: bold;
-}
-
-.footer-link {
-    display: flex;
-    gap: 5vw;
-}
-
-.footer-link .item-footerLink {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
-.footer-link .item-footerLink h2 {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.footer-link .item-footerLink div {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.item-footerLink div p {
-    color: #979797;
-}
 
 
 @media (max-width: 700px) {
@@ -183,27 +104,5 @@ footer .footer-newLetter div {
         width: 60%;
         font-size: 16px;
     }
-
-    footer {
-        flex-direction: column;
-        gap: 30px;
-        width: 100%;
-        padding: 30px;
-    }
-    
-    footer .footer-newLetter {
-        justify-content: flex-start;
-    }
-
-
-    footer .footer-newLetter h1 {
-        font-size: 30px;
-        width: fit-content;
-    }
-
-    footer p {
-        font-size: 14px;
-    }
-
 
 }
