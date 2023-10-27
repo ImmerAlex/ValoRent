@@ -9,12 +9,39 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="../favicon.ico">
     <link rel="stylesheet" href="../public/css/reset.css">
+    <link rel="stylesheet" href="../public/css/nav.css">
     <link rel="stylesheet" href="../public/css/footer.css">
     <link rel="stylesheet" href="../public/css/cart.css">
     <title>Cart ValoRent</title>
 </head>
 
 <body>
+
+    <nav>
+        <div class="leftNavContainer">
+            <a href="../index.html">ValoRent</a>
+            <a href="shop.html">Shop</a>
+            <div>
+                <input placeholder="Search" type="text" name="searchShop" id="searchShop" />
+                <label for="searchShop">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </label>
+            </div>
+        </div>
+        <div class="rightNavContainer">
+            <div>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <p id="nombreInChart">0</p>
+            </div>
+            <a>login</a>
+        </div>
+
+        <div class="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
 
     <div class="container-all">
 
@@ -144,6 +171,7 @@
         </div>
       </footer>
 
+      <script src="../public/javaScript/nav.js"></script>
     <script src="../public/javaScript/cart.js"></script>
 </body>
 
